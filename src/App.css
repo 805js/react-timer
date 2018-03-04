@@ -1,0 +1,15 @@
+.app {
+  display: flex;
+  justify-content: center;
+  height: 99%;
+}
+.logo {
+  position: absolute;
+  overflow: hidden;
+  width: 700px;
+  bottom: -160px;
+  right: -260px;
+  z-index: -1;
+  filter: saturate(.3)
+}
+

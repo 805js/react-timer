@@ -1,0 +1,64 @@
+.timer {
+  width: 70%;
+  margin: auto;
+  background: rgb(60, 66, 78);
+  border: 1px solid rgb(80, 88, 104);
+  border-radius: 2px;
+}
+.timer-running {
+  border: 1px solid green;
+}
+
+.timer > * {
+  flex: 1 auto;
+}
+
+.counter,
+.controls,
+.marked-times {
+  padding: 2em;
+}
+
+.counter {
+  text-align: right;
+}
+
+.elapsed {
+  font-size: 3em;
+}
+
+.controls {
+  text-align: right;
+}
+
+button {
+  margin: 0.1em;
+  border-radius: 2px;
+  padding: 0.5em 0.9em;
+  font-variant: all-small-caps;
+  user-select: none;
+  background-color: #eee;
+}
+
+.marked-times {
+  text-align: right;
+}
+
+.time-list {
+  list-style: none;
+}
+
+@media all and (min-width: 600px) {
+  .timer {
+    width: 50%;
+    margin: auto;
+    display: flex;
+  }
+  .elapsed {
+    font-size: 4em;
+  }
+}
+
+.d {
+  border: 1px solid yellow;
+}
