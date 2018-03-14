@@ -3,7 +3,6 @@ import './App.css';
 import Timer from './Timer';
 import logo from './logo.svg';
 
-
 class App extends Component {
   render() {
     return (

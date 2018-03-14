@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {formatMillis} from './util';
 
-const MarkedTimes = ({times}) => (
+const MarkedTimes = ({times, title}) => (
   <div className="marked-times">
     <div>MARKED TIMES</div>
     <ul className="time-list">
