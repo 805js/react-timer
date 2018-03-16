@@ -1,6 +1,10 @@
-.timer {
-  width: 70%;
+.header {
   margin: auto;
+  font-size: 20px;
+  text-align: right;
+  padding: .5em 0 .5em 0;
+}
+.timer {
   background: rgb(60, 66, 78);
   border: 1px solid rgb(80, 88, 104);
   border-radius: 2px;
@@ -19,6 +23,7 @@
   padding: 2em;
 }
 
+.header,
 .counter {
   text-align: right;
 }

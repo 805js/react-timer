@@ -4,6 +4,8 @@ import Counter from './Counter';
 import Controls from './Controls';
 import MarkedTimes from './MarkedTimes';
 
+const Header = () => <div className="header">REACT TIMER</div>;
+
 export default class Timer extends React.Component {
   INCREMENT = 25;
 
@@ -71,17 +73,20 @@ export default class Timer extends React.Component {
   render() {
     const {time, markedTimes, interval} = this.state;
     return (
-      <div className={`timer ${interval && 'timer-running'}`}>
-        <div>
-          <Counter time={time} />
-          <Controls
-            onStart={this.onStart}
-            onStop={this.onStop}
-            onMark={this.onMark}
-            onReset={this.onReset}
-          />
+      <div>
+        <Header />
+        <div className={`timer ${interval && 'timer-running'}`}>
+          <div>
+            <Counter time={time} />
+            <Controls
+              onStart={this.onStart}
+              onStop={this.onStop}
+              onMark={this.onMark}
+              onReset={this.onReset}
+            />
+          </div>
+          <MarkedTimes times={markedTimes} />
         </div>
-        <MarkedTimes times={markedTimes} />
       </div>
     );
   }
